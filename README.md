@@ -15,11 +15,11 @@
 	
 	//创建并启动调试服务器
 	
-	mServer = new XAppDbgServer（）;
+	mServer = new XAppDbgServer();
 	
-	mServer.addModule（new XAppDbgPropertiesModule（Consts.class））;	
+	mServer.addModule(new XAppDbgPropertiesModule(Consts.class));	
 	
-	mServer.start（）;
+	mServer.start();
 	
 	第一行只是创建一个服务器实例。 XAppDbgPropertiesModule扫描对象或类的字段，并公开其找到的所有公共字段。 第三行启动服务器，它将在端口55011上监听。
 	！！！！！为了使其工作，应用程序必须具有INTERNET权限 
